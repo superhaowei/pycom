@@ -10,8 +10,8 @@ def read_str():
 	    while 0 != cmp(result , "OK\r\n"):
 #	    	print t
 	    	t=t+1
-                if 3 == t:
-                    sys.stderr.write("read timeout \r\n");
+                if 20 == t:
+                    sys.stderr.write("read timeouti1 \r\n");
                     sys.exit(1);
                     ser.close()
                     break;
@@ -23,7 +23,7 @@ def read_str():
             sys.exit(1);
             ser.close()
         except AttributeError as aee:
-            sys.stderr.write("read timeout \r\n");
+            sys.stderr.write("read timeout2 \r\n");
             sys.exit(1);
             ser.close()
 
