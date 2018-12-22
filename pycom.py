@@ -52,7 +52,7 @@ if __name__ == "__main__":
     global send_data;
     global send_rate;
     if 3 != len(sys.argv):
-        print("param error!\r\nex:./pycom.py /dev/ttyUSB0 at\r\n");
+        print("param error!\r\nex:./pycom.py at /dev/ttyUSB0 \r\n");
         sys.exit(1);
     send_data = sys.argv[1];
     send_port = sys.argv[2];
